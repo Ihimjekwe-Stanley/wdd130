@@ -28,10 +28,28 @@ header, main, footer {
     margin: 0 auto;
 }
 
+/* HEADER */
+header {
+    background-color: var(--secondary-color); /* FIXED */
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--accent2-color); /* FIXED */
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* HEADINGS */
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+/* USE ACCENT COLOR */
+h2 {
+    color: var(--accent2-color); /* FIXED */
 }
 
 /* SPACING */
@@ -44,7 +62,7 @@ nav, p, section, article {
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color); /* FIXED */
     font-weight: bold;
 }
 
@@ -87,13 +105,12 @@ nav a {
     margin-left: 10px;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    margin-top: 20px;
-}
-
 /* SOCIAL MEDIA */
 .socialmedia a {
     text-decoration: none;
+}
+
+/* SECTION STYLE (optional improvement) */
+section {
+    background-color: #f4f4f4;
 }
