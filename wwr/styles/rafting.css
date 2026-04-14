@@ -1,211 +1,105 @@
-/*
-CSS VARIABLES
-*/
-:root {
-    --primary-color: #0077b6;
-    --secondary-color: #90e0ef;
-    --accent1-color: #03045e;
-    --accent2-color: #caf0f8;
-    --white: #ffffff;
-
-    --heading-font: Arial, sans-serif;
-    --body-font: Verdana, sans-serif;
-}
-
-/* RESET
-*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* BODY
-*/
-
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: var(--accent2-color);
-}
-
-/* LAYOUT WIDTH
-*/
-
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 /* HEADER */
-
 header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    background-color: var(--secondary-color);
-}
-
-header img {
-    width: 100px;
-}
-
-/* HEADINGS*/
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* GENERAL SPACING */
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* NAVIGATION */
-
-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--accent1-color);
-    font-weight: bold;
-}
-
-/* HERO SECTION */
-.hero {
-    Position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-/* HERO TITLE */
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    background-color: var(--accent1-color);
-    color: var(--white);
-}
-
-/* HERO ARTICLE */
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: var(--accent2-color);
-    padding: 10px;
-    opacity: 0.95;
-}
-
-/* ARTICLE IMAGE */
-
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 10px;
-}
-
-/* HISTORY */
-
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    align-items: center;
-}
-
-.history-content img {
-    width: 100%;
-}
-
-/* ADVENTURES */
-.adventure-gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.adventure-gallery img {
-    width: 100%;
-}
-
-figure {
-    text-align: center;
-    width: 100%;
-}
-
-/* SECTION */
-
-section {
-    background-color: var(--white);
-}
-
-/* FOOTER */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--secondary-color);
-}
-
-/* SOCIAL MEDIA */
-
-.socialmedia {
-    display: flex;
-    gap: 10px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-.contact-info, .employees, .contact-form {
-  margin: 20px 0;
-}
-
-.employees {
-  display: flex;
-  gap:20px;
-}
-
-.employees figure {
+  background: #1e3a5f;
+  color: white;
+  padding: 15px;
   text-align: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
 }
 
-button {
-  background-color: #0077cc;
+/* HERO */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 15px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1e3a5f;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* GRID */
+.grid, .trips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item, .trip-card {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.grid img, .trips-grid img {
+  width: 100%;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  text-align: center;
+  padding: 20px;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin: 5px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #1e3a5f;
   color: white;
   padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #005fa3;
 }
