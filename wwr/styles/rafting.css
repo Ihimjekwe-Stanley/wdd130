@@ -86,7 +86,7 @@ nav a {
 
 /* HERO SECTION */
 .hero {
-    Position: relative;
+    position: relative;
 }
 
 .hero img {
